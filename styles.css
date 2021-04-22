@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+.music-container {
+  background-color: whitesmoke;
+  height: 70vh;
+  width: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+}
+
+button {
+  background-color: whitesmoke;
+  border: none;
+  padding: 1rem;
+}
+
+.action-btn {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.action-btn-big {
+  font-size: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.music-container.play .music-img img {
+  animation-play-state: running;
+}
+
+.progress-container {
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 80%;
+}
+
+.progress {
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.music-img img {
+  height: 90%;
+  width: 90%;
+  margin-left: 13px;
+  margin-bottom: 50px;
+}
